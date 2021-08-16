@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Account\\Desktop\\Repos\\OOP_revision\\OOP_revision.csproj": {}
+    "C:\\Praksa Mono\\Mono Repository\\OOP_revision\\OOP_revision.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Account\\Desktop\\Repos\\OOP_revision\\OOP_revision.csproj": {
+    "C:\\Praksa Mono\\Mono Repository\\OOP_revision\\OOP_revision.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Account\\Desktop\\Repos\\OOP_revision\\OOP_revision.csproj",
+        "projectUniqueName": "C:\\Praksa Mono\\Mono Repository\\OOP_revision\\OOP_revision.csproj",
         "projectName": "OOP_revision",
-        "projectPath": "C:\\Users\\Account\\Desktop\\Repos\\OOP_revision\\OOP_revision.csproj",
+        "projectPath": "C:\\Praksa Mono\\Mono Repository\\OOP_revision\\OOP_revision.csproj",
         "packagesPath": "C:\\Users\\Account\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Account\\Desktop\\Repos\\OOP_revision\\obj\\",
+        "outputPath": "C:\\Praksa Mono\\Mono Repository\\OOP_revision\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

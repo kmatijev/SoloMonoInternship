@@ -11,3 +11,16 @@ C:\Users\Account\Desktop\Repos\OOP_revision\obj\Debug\netcoreapp3.1\OOP_revision
 C:\Users\Account\Desktop\Repos\OOP_revision\obj\Debug\netcoreapp3.1\OOP_revision.dll
 C:\Users\Account\Desktop\Repos\OOP_revision\obj\Debug\netcoreapp3.1\OOP_revision.pdb
 C:\Users\Account\Desktop\Repos\OOP_revision\obj\Debug\netcoreapp3.1\OOP_revision.genruntimeconfig.cache
+C:\Praksa Mono\Mono Repository\OOP_revision\bin\Debug\netcoreapp3.1\OOP_revision.exe
+C:\Praksa Mono\Mono Repository\OOP_revision\bin\Debug\netcoreapp3.1\OOP_revision.deps.json
+C:\Praksa Mono\Mono Repository\OOP_revision\bin\Debug\netcoreapp3.1\OOP_revision.runtimeconfig.json
+C:\Praksa Mono\Mono Repository\OOP_revision\bin\Debug\netcoreapp3.1\OOP_revision.runtimeconfig.dev.json
+C:\Praksa Mono\Mono Repository\OOP_revision\bin\Debug\netcoreapp3.1\OOP_revision.dll
+C:\Praksa Mono\Mono Repository\OOP_revision\bin\Debug\netcoreapp3.1\OOP_revision.pdb
+C:\Praksa Mono\Mono Repository\OOP_revision\obj\Debug\netcoreapp3.1\OOP_revision.csproj.AssemblyReference.cache
+C:\Praksa Mono\Mono Repository\OOP_revision\obj\Debug\netcoreapp3.1\OOP_revision.AssemblyInfoInputs.cache
+C:\Praksa Mono\Mono Repository\OOP_revision\obj\Debug\netcoreapp3.1\OOP_revision.AssemblyInfo.cs
+C:\Praksa Mono\Mono Repository\OOP_revision\obj\Debug\netcoreapp3.1\OOP_revision.csproj.CoreCompileInputs.cache
+C:\Praksa Mono\Mono Repository\OOP_revision\obj\Debug\netcoreapp3.1\OOP_revision.dll
+C:\Praksa Mono\Mono Repository\OOP_revision\obj\Debug\netcoreapp3.1\OOP_revision.pdb
+C:\Praksa Mono\Mono Repository\OOP_revision\obj\Debug\netcoreapp3.1\OOP_revision.genruntimeconfig.cache
