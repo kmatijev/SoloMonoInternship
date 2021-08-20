@@ -1,0 +1,17 @@
+C:\Users\Account\Desktop\Day4 New\Solution\Service\obj\Debug\Service.csproj.AssemblyReference.cache
+C:\Users\Account\Desktop\Day4 New\Solution\Service\obj\Debug\Service.csproj.CoreCompileInputs.cache
+C:\Users\Account\Desktop\Day4 New\Solution\Service\bin\Debug\Service.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Service\bin\Debug\Service.pdb
+C:\Users\Account\Desktop\Day4 New\Solution\Service\bin\Debug\Model.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Service\bin\Debug\Repository.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Service\bin\Debug\Service.Common.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Service\bin\Debug\Model.Common.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Service\bin\Debug\Repository.Common.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Service\bin\Debug\Model.pdb
+C:\Users\Account\Desktop\Day4 New\Solution\Service\bin\Debug\Repository.pdb
+C:\Users\Account\Desktop\Day4 New\Solution\Service\bin\Debug\Service.Common.pdb
+C:\Users\Account\Desktop\Day4 New\Solution\Service\bin\Debug\Model.Common.pdb
+C:\Users\Account\Desktop\Day4 New\Solution\Service\bin\Debug\Repository.Common.pdb
+C:\Users\Account\Desktop\Day4 New\Solution\Service\obj\Debug\Service.csproj.CopyComplete
+C:\Users\Account\Desktop\Day4 New\Solution\Service\obj\Debug\Service.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Service\obj\Debug\Service.pdb

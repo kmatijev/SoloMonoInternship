@@ -1,0 +1,6 @@
+C:\Users\Account\Desktop\Day4 New\Solution\Model.Common\bin\Debug\Model.Common.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Model.Common\bin\Debug\Model.Common.pdb
+C:\Users\Account\Desktop\Day4 New\Solution\Model.Common\obj\Debug\Model.Common.csproj.AssemblyReference.cache
+C:\Users\Account\Desktop\Day4 New\Solution\Model.Common\obj\Debug\Model.Common.csproj.CoreCompileInputs.cache
+C:\Users\Account\Desktop\Day4 New\Solution\Model.Common\obj\Debug\Model.Common.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Model.Common\obj\Debug\Model.Common.pdb
