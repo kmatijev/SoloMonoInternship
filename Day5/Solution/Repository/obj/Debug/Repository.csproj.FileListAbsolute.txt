@@ -1,0 +1,26 @@
+C:\Users\Account\Desktop\Day4 New\Solution\Repository\bin\Debug\Repository.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Repository\bin\Debug\Repository.pdb
+C:\Users\Account\Desktop\Day4 New\Solution\Repository\bin\Debug\Model.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Repository\bin\Debug\Repository.Common.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Repository\bin\Debug\Model.Common.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Repository\bin\Debug\Model.pdb
+C:\Users\Account\Desktop\Day4 New\Solution\Repository\bin\Debug\Repository.Common.pdb
+C:\Users\Account\Desktop\Day4 New\Solution\Repository\bin\Debug\Model.Common.pdb
+C:\Users\Account\Desktop\Day4 New\Solution\Repository\obj\Debug\Repository.csproj.AssemblyReference.cache
+C:\Users\Account\Desktop\Day4 New\Solution\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\Users\Account\Desktop\Day4 New\Solution\Repository\obj\Debug\Repository.csproj.CopyComplete
+C:\Users\Account\Desktop\Day4 New\Solution\Repository\obj\Debug\Repository.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Repository\obj\Debug\Repository.pdb
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository\bin\Debug\Repository.dll
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository\bin\Debug\Repository.pdb
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository\bin\Debug\Model.dll
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository\bin\Debug\Repository.Common.dll
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository\bin\Debug\Model.Common.dll
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository\bin\Debug\Model.pdb
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository\bin\Debug\Repository.Common.pdb
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository\bin\Debug\Model.Common.pdb
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository\obj\Debug\Repository.csproj.AssemblyReference.cache
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository\obj\Debug\Repository.csproj.CopyComplete
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository\obj\Debug\Repository.dll
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository\obj\Debug\Repository.pdb

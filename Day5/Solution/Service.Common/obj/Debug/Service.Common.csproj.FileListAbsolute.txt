@@ -1,0 +1,22 @@
+C:\Users\Account\Desktop\Day4 New\Solution\Service.Common\bin\Debug\Service.Common.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Service.Common\bin\Debug\Service.Common.pdb
+C:\Users\Account\Desktop\Day4 New\Solution\Service.Common\bin\Debug\Model.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Service.Common\bin\Debug\Model.Common.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Service.Common\bin\Debug\Model.pdb
+C:\Users\Account\Desktop\Day4 New\Solution\Service.Common\bin\Debug\Model.Common.pdb
+C:\Users\Account\Desktop\Day4 New\Solution\Service.Common\obj\Debug\Service.Common.csproj.AssemblyReference.cache
+C:\Users\Account\Desktop\Day4 New\Solution\Service.Common\obj\Debug\Service.Common.csproj.CoreCompileInputs.cache
+C:\Users\Account\Desktop\Day4 New\Solution\Service.Common\obj\Debug\Service.Common.csproj.CopyComplete
+C:\Users\Account\Desktop\Day4 New\Solution\Service.Common\obj\Debug\Service.Common.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Service.Common\obj\Debug\Service.Common.pdb
+C:\Praksa Mono\Mono Repository\Day5\Solution\Service.Common\bin\Debug\Service.Common.dll
+C:\Praksa Mono\Mono Repository\Day5\Solution\Service.Common\bin\Debug\Service.Common.pdb
+C:\Praksa Mono\Mono Repository\Day5\Solution\Service.Common\bin\Debug\Model.dll
+C:\Praksa Mono\Mono Repository\Day5\Solution\Service.Common\bin\Debug\Model.Common.dll
+C:\Praksa Mono\Mono Repository\Day5\Solution\Service.Common\bin\Debug\Model.pdb
+C:\Praksa Mono\Mono Repository\Day5\Solution\Service.Common\bin\Debug\Model.Common.pdb
+C:\Praksa Mono\Mono Repository\Day5\Solution\Service.Common\obj\Debug\Service.Common.csproj.AssemblyReference.cache
+C:\Praksa Mono\Mono Repository\Day5\Solution\Service.Common\obj\Debug\Service.Common.csproj.CoreCompileInputs.cache
+C:\Praksa Mono\Mono Repository\Day5\Solution\Service.Common\obj\Debug\Service.Common.csproj.CopyComplete
+C:\Praksa Mono\Mono Repository\Day5\Solution\Service.Common\obj\Debug\Service.Common.dll
+C:\Praksa Mono\Mono Repository\Day5\Solution\Service.Common\obj\Debug\Service.Common.pdb

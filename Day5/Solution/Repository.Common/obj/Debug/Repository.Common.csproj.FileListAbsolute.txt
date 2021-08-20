@@ -1,0 +1,22 @@
+C:\Users\Account\Desktop\Day4 New\Solution\Repository.Common\bin\Debug\Repository.Common.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Repository.Common\bin\Debug\Repository.Common.pdb
+C:\Users\Account\Desktop\Day4 New\Solution\Repository.Common\bin\Debug\Model.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Repository.Common\bin\Debug\Model.Common.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Repository.Common\bin\Debug\Model.pdb
+C:\Users\Account\Desktop\Day4 New\Solution\Repository.Common\bin\Debug\Model.Common.pdb
+C:\Users\Account\Desktop\Day4 New\Solution\Repository.Common\obj\Debug\Repository.Common.csproj.AssemblyReference.cache
+C:\Users\Account\Desktop\Day4 New\Solution\Repository.Common\obj\Debug\Repository.Common.csproj.CoreCompileInputs.cache
+C:\Users\Account\Desktop\Day4 New\Solution\Repository.Common\obj\Debug\Repository.Common.csproj.CopyComplete
+C:\Users\Account\Desktop\Day4 New\Solution\Repository.Common\obj\Debug\Repository.Common.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Repository.Common\obj\Debug\Repository.Common.pdb
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository.Common\bin\Debug\Repository.Common.dll
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository.Common\bin\Debug\Repository.Common.pdb
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository.Common\bin\Debug\Model.dll
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository.Common\bin\Debug\Model.Common.dll
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository.Common\bin\Debug\Model.pdb
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository.Common\bin\Debug\Model.Common.pdb
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository.Common\obj\Debug\Repository.Common.csproj.AssemblyReference.cache
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository.Common\obj\Debug\Repository.Common.csproj.CoreCompileInputs.cache
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository.Common\obj\Debug\Repository.Common.csproj.CopyComplete
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository.Common\obj\Debug\Repository.Common.dll
+C:\Praksa Mono\Mono Repository\Day5\Solution\Repository.Common\obj\Debug\Repository.Common.pdb

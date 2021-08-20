@@ -1,0 +1,9 @@
+C:\Users\Account\Desktop\Day4 New\Solution\Model\bin\Debug\Model.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Model\bin\Debug\Model.pdb
+C:\Users\Account\Desktop\Day4 New\Solution\Model\bin\Debug\Model.Common.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Model\bin\Debug\Model.Common.pdb
+C:\Users\Account\Desktop\Day4 New\Solution\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\Account\Desktop\Day4 New\Solution\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\Account\Desktop\Day4 New\Solution\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\Account\Desktop\Day4 New\Solution\Model\obj\Debug\Model.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Model\obj\Debug\Model.pdb
