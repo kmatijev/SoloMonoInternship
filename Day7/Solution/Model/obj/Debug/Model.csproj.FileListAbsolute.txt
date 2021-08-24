@@ -1,0 +1,62 @@
+C:\Users\Account\Desktop\Day4 New\Solution\Model\bin\Debug\Model.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Model\bin\Debug\Model.pdb
+C:\Users\Account\Desktop\Day4 New\Solution\Model\bin\Debug\Model.Common.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Model\bin\Debug\Model.Common.pdb
+C:\Users\Account\Desktop\Day4 New\Solution\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\Account\Desktop\Day4 New\Solution\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\Account\Desktop\Day4 New\Solution\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\Account\Desktop\Day4 New\Solution\Model\obj\Debug\Model.dll
+C:\Users\Account\Desktop\Day4 New\Solution\Model\obj\Debug\Model.pdb
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\Model.dll.config
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\Model.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\Model.pdb
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\Autofac.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\Autofac.Integration.Mvc.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\Autofac.Integration.WebApi.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\Model.Common.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\Newtonsoft.Json.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Buffers.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Memory.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Net.Http.Formatting.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Numerics.Vectors.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Web.Helpers.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Web.Http.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Web.Mvc.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Web.Razor.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Web.WebPages.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\Model.Common.pdb
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\Model.Common.dll.config
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\Autofac.pdb
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\Autofac.xml
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\Autofac.Integration.Mvc.pdb
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\Autofac.Integration.Mvc.xml
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\Autofac.Integration.WebApi.pdb
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\Autofac.Integration.WebApi.xml
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\Newtonsoft.Json.xml
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Buffers.xml
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Memory.xml
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Net.Http.Formatting.xml
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Numerics.Vectors.xml
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Web.Helpers.xml
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Web.Http.xml
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Web.Mvc.xml
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Web.Razor.xml
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Web.WebPages.xml
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\obj\Debug\Model.dll
+C:\Praksa Mono\Mono Repository\Day6\Solution\Model\obj\Debug\Model.pdb
