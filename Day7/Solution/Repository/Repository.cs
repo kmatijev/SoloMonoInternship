@@ -23,7 +23,7 @@ namespace WebRepository
                 string queryString = String.Format("SELECT GradeName, GradeID FROM Grade WHERE GradeID = {0};", id);
                 SqlCommand command = new SqlCommand(queryString, connection);
 
-                SqlDataReader reader = command.ExecuteReader();
+                SqlDataReader reader = await command.ExecuteReaderAsync();
 
                 if (reader.HasRows)
                 {
@@ -55,7 +55,7 @@ namespace WebRepository
                 adapter.InsertCommand = new SqlCommand(queryString, connection);
                 try
                 {
-                    adapter.InsertCommand.ExecuteNonQuery();
+                    await adapter.InsertCommand.ExecuteNonQueryAsync();
                     connection.Close();
                 }
                 catch
@@ -91,7 +91,7 @@ namespace WebRepository
                     connection.Open();
                     adapter.UpdateCommand = connection.CreateCommand();
                     adapter.UpdateCommand.CommandText = sql;
-                    adapter.UpdateCommand.ExecuteNonQuery();
+                    await adapter.UpdateCommand.ExecuteNonQueryAsync();
 
                     return String.Format("Updated Grade with Grade ID = {0}, Grade Name = {1}.", id, value);
                 }
@@ -114,7 +114,7 @@ namespace WebRepository
                 adapter.DeleteCommand.CommandText = queryString;
                 try
                 {
-                    adapter.DeleteCommand.ExecuteNonQuery();
+                    await adapter.DeleteCommand.ExecuteNonQueryAsync();
                     connection.Close();
                     string returnString = "Deleted: Grade ID: " + id;
 
@@ -137,7 +137,7 @@ namespace WebRepository
                 string queryString = String.Format("SELECT StudentName, GradeID FROM STUDENT WHERE StudentID = {0};", id);
                 SqlCommand command = new SqlCommand(queryString, connection);
 
-                SqlDataReader reader = command.ExecuteReader();
+                SqlDataReader reader = await command.ExecuteReaderAsync();
 
                 if (reader.HasRows)
                 {
@@ -171,7 +171,7 @@ namespace WebRepository
                 adapter.InsertCommand = new SqlCommand(queryString, connection);
                 try
                 {
-                    adapter.InsertCommand.ExecuteNonQuery();
+                    await adapter.InsertCommand.ExecuteNonQueryAsync();
                     connection.Close();
                 }
                 catch
@@ -209,7 +209,7 @@ namespace WebRepository
                     connection.Open();
                     adapter.UpdateCommand = connection.CreateCommand();
                     adapter.UpdateCommand.CommandText = sql;
-                    adapter.UpdateCommand.ExecuteNonQuery();
+                    await adapter.UpdateCommand.ExecuteNonQueryAsync();
 
                     return String.Format("Updated Student with Student ID = {0}, Student Name = {1}.",id, value);
                 }
@@ -233,7 +233,7 @@ namespace WebRepository
                 adapter.DeleteCommand.CommandText = queryString;
                 try
                 {
-                    adapter.DeleteCommand.ExecuteNonQuery();
+                    await adapter.DeleteCommand.ExecuteNonQueryAsync();
                     connection.Close();
                     string returnString = "Deleted: StudentID: " + id;
 

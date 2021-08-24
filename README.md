@@ -1,1 +1,1 @@
-"# SoloMonoInternship" 
+"SoloMonoInternship"
