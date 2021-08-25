@@ -137,7 +137,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\WebAPIController.cs" />
+    <Compile Include="Controllers\GradeController.cs" />
+    <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -157,29 +158,29 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Model.Common\Model.Common.csproj">
+    <ProjectReference Include="..\Model.Common\Project.Model.Common.csproj">
       <Project>{c4512d69-063d-4871-a2f9-31a9b1d3eab6}</Project>
-      <Name>Model.Common</Name>
+      <Name>Project.Model.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Model\Model.csproj">
+    <ProjectReference Include="..\Model\Project.Model.csproj">
       <Project>{88b0e844-f57a-4612-b450-10df68ebd646}</Project>
-      <Name>Model</Name>
+      <Name>Project.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Repository.Common\Repository.Common.csproj">
+    <ProjectReference Include="..\Repository.Common\Project.Repository.Common.csproj">
       <Project>{2D54D5E8-4EE7-4888-A610-1E7E3E64BF0F}</Project>
-      <Name>Repository.Common</Name>
+      <Name>Project.Repository.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Repository\Repository.csproj">
+    <ProjectReference Include="..\Repository\Project.Repository.csproj">
       <Project>{69CC309D-2FC4-4B5C-83C1-CA2ECF405C7C}</Project>
-      <Name>Repository</Name>
+      <Name>Project.Repository</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Service.Common\Service.Common.csproj">
+    <ProjectReference Include="..\Service.Common\Project.Service.Common.csproj">
       <Project>{9898A684-0FD3-4332-8370-7CCE19A47674}</Project>
-      <Name>Service.Common</Name>
+      <Name>Project.Service.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Service\Service.csproj">
+    <ProjectReference Include="..\Service\Project.Service.csproj">
       <Project>{2db36a4d-1dc0-4706-af71-a380c7d16656}</Project>
-      <Name>Service</Name>
+      <Name>Project.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

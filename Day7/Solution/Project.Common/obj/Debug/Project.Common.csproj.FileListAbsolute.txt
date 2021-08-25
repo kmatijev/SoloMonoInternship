@@ -1,0 +1,6 @@
+C:\Praksa Mono\Mono Repository\Day7\Solution\Project.Common\bin\Debug\Project.Common.dll
+C:\Praksa Mono\Mono Repository\Day7\Solution\Project.Common\bin\Debug\Project.Common.pdb
+C:\Praksa Mono\Mono Repository\Day7\Solution\Project.Common\obj\Debug\Project.Common.csproj.AssemblyReference.cache
+C:\Praksa Mono\Mono Repository\Day7\Solution\Project.Common\obj\Debug\Project.Common.csproj.CoreCompileInputs.cache
+C:\Praksa Mono\Mono Repository\Day7\Solution\Project.Common\obj\Debug\Project.Common.dll
+C:\Praksa Mono\Mono Repository\Day7\Solution\Project.Common\obj\Debug\Project.Common.pdb

@@ -20,26 +20,21 @@ namespace WebAPI
 {
     public class WebApiApplication : System.Web.HttpApplication
     {
+        //public IContainer Container { get; set; }
+
         protected void Application_Start()
         {
             var builder = new ContainerBuilder();
-            var config = GlobalConfiguration.Configuration;
-
-            GlobalConfiguration.Configure(WebApiConfig.Register);
-
-            builder.RegisterType<Student>().As<IStudent>();
-            builder.RegisterType<Grade>().As<IGrade>();
-            builder.RegisterType<Repository>().As<IRepository>();
-            builder.RegisterType<PDService>().As<IService>();
-
-            builder.RegisterModule<ServiceDIModule>();
-            builder.RegisterModule<RepoDIModule>();
 
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
 
-            var container = builder.Build();
+            builder.RegisterModule(new RepoDIModule());
+            builder.RegisterModule(new ServiceDIModule());
 
-            config.DependencyResolver = new AutofacWebApiDependencyResolver(container);
+            var Container = builder.Build();
+
+            GlobalConfiguration.Configure(WebApiConfig.Register);
+            GlobalConfiguration.Configuration.DependencyResolver = new AutofacWebApiDependencyResolver(Container);
         }
     }
 }

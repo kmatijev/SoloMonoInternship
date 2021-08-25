@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System;
 using System.Data;
 using System.Threading.Tasks;
+using Project.Common;
 
 namespace WebRepository
 {
@@ -40,6 +41,58 @@ namespace WebRepository
                 connection.Close();
             }
             
+            return GradeList;
+        }
+
+        public async Task<List<Grade>> GetAllGrades(string order, string sort, int page, string atribute, string filter)
+        {
+            List<Grade> GradeList = new List<Grade>();
+
+            string toPage = "";
+            string toSort = "";
+            string toFilter = "";
+
+            if (page > 0)
+            {
+                Pager PageString = new Pager();
+                toPage = PageString.AddPage(page);
+            }
+
+            if (sort != "null" && order != "null")
+            {
+                Sorter SortString = new Sorter();
+                toSort = SortString.SortBy(order, sort);
+            }
+            
+            if (atribute != "null" && filter != "null")
+            {
+                GradeFilter FilterString = new GradeFilter();
+                toFilter = FilterString.Filter(atribute, filter);
+            }
+
+            using (connection)
+            {
+                connection.Open();
+                string queryString = "SELECT GradeName, GradeID FROM Grade" + toFilter + toPage + toSort + ";";
+                SqlCommand command = new SqlCommand(queryString, connection);
+
+                SqlDataReader reader = await command.ExecuteReaderAsync();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Grade S = new Grade();
+                        S.name = Convert.ToString(reader.GetString(0));
+                        S.id = Convert.ToInt32(reader.GetInt32(1));
+
+                        GradeList.Add(S);
+                    }
+                    reader.NextResult();
+                }
+                connection.Close();
+            }
+
             return GradeList;
         }
 
@@ -147,6 +200,60 @@ namespace WebRepository
                         S.name = Convert.ToString(reader.GetString(0));
                         S.gradeId = Convert.ToInt32(reader.GetInt32(1));
                         S.id = id;
+
+                        StudentList.Add(S);
+                    }
+                    reader.NextResult();
+
+                    connection.Close();
+                }
+            }
+
+            return StudentList;
+        }
+
+        public async Task<List<Student>> GetAllStudents(string order, string sort, int page, string atribute, string filter)
+        {
+            List<Student> StudentList = new List<Student>();
+
+            string toPage = "";
+            string toSort = "";
+            string toFilter = "";
+
+            if (page > 0)
+            {
+                Pager PageString = new Pager();
+                toPage = PageString.AddPage(page);
+            }
+
+            if (sort != "null" && order != "null")
+            {
+                Sorter SortString = new Sorter();
+                toSort = SortString.SortBy(order, sort);
+            }
+
+            if (atribute != "null" && filter != "null")
+            {
+                StudentFilter FilterString = new StudentFilter();
+                toFilter = FilterString.Filter(atribute, filter);
+            }
+
+            using (connection)
+            {
+                connection.Open();
+                string queryString = "SELECT StudentName, GradeID, StudentID FROM STUDENT" + toFilter + toSort + toPage + ";";
+                SqlCommand command = new SqlCommand(queryString, connection);
+
+                SqlDataReader reader = await command.ExecuteReaderAsync();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        Student S = new Student();
+                        S.name = Convert.ToString(reader.GetString(0));
+                        S.gradeId = Convert.ToInt32(reader.GetInt32(1));
+                        S.id = Convert.ToInt32(reader.GetInt32(2));
 
                         StudentList.Add(S);
                     }
