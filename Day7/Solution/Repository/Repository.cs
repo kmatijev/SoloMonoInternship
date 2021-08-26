@@ -44,7 +44,7 @@ namespace WebRepository
             return GradeList;
         }
 
-        public async Task<List<Grade>> GetAllGrades(string order, string sort, int page, string atribute, string filter)
+        public async Task<List<Grade>> GetAllGrades(string order, string sort, int pageSize, int pageNum, string atribute, string filter)
         {
             List<Grade> GradeList = new List<Grade>();
 
@@ -52,10 +52,10 @@ namespace WebRepository
             string toSort = "";
             string toFilter = "";
 
-            if (page > 0)
+            if (pageSize >= 0 && pageNum >= 0)
             {
-                Pager PageString = new Pager();
-                toPage = PageString.AddPage(page);
+                Pager PageString = new Pager(pageSize, pageNum);
+                toPage = PageString.AddPage();
             }
 
             if (sort != "null" && order != "null")
@@ -73,7 +73,7 @@ namespace WebRepository
             using (connection)
             {
                 connection.Open();
-                string queryString = "SELECT GradeName, GradeID FROM Grade" + toFilter + toPage + toSort + ";";
+                string queryString = "SELECT GradeName, GradeID FROM Grade" + toFilter + toSort + toPage + ";";
                 SqlCommand command = new SqlCommand(queryString, connection);
 
                 SqlDataReader reader = await command.ExecuteReaderAsync();
@@ -212,7 +212,7 @@ namespace WebRepository
             return StudentList;
         }
 
-        public async Task<List<Student>> GetAllStudents(string order, string sort, int page, string atribute, string filter)
+        public async Task<List<Student>> GetAllStudents(string order, string sort, int pageSize, int pageNum, string atribute, string filter)
         {
             List<Student> StudentList = new List<Student>();
 
@@ -220,10 +220,10 @@ namespace WebRepository
             string toSort = "";
             string toFilter = "";
 
-            if (page > 0)
+            if (pageSize >= 0 && pageNum >= 0)
             {
-                Pager PageString = new Pager();
-                toPage = PageString.AddPage(page);
+                Pager PageString = new Pager(pageSize, pageNum);
+                toPage = PageString.AddPage();
             }
 
             if (sort != "null" && order != "null")

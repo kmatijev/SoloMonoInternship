@@ -60,11 +60,11 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet]
-        [Route("api/grades/sort_by{order}={sort}/pageination={page}/where{atribute}={filter}")]
-        public async Task<HttpResponseMessage> GetAll(string order, string sort, int page, string atribute, string filter)
+        [Route("api/grades/{order}/{sort}/{pageSize}/{pageNum}/{atribute}/{filter}")]
+        public async Task<HttpResponseMessage> GetAll(string order, string sort, int pageSize, int pageNum, string atribute, string filter)
         {
 
-            List<RESTGrade> GradeList = (await GradeService.GetAllGrades(order, sort, page, atribute, filter)).ConvertAll(GradeToREST);
+            List<RESTGrade> GradeList = (await GradeService.GetAllGrades(order, sort, pageSize, pageNum, atribute, filter)).ConvertAll(GradeToREST);
 
             string combinedString = "";
 

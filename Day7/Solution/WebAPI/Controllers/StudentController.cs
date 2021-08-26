@@ -63,10 +63,10 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet]
-        [Route("api/students/sort_by{order}={sort}/pageination={page}/where{atribute}={filter}")]
-        public async Task<HttpResponseMessage> GetAll(string order, string sort, int page, string atribute, string filter)
+        [Route("api/students/{order}/{sort}/{pageSize}/{pageNum}/{atribute}/{filter}")]
+        public async Task<HttpResponseMessage> GetAll(string order, string sort, int pageSize, int pageNum, string atribute, string filter)
         {
-            List<RESTStudent> StudentList = (await StudentService.GetAllStudents(order, sort, page, atribute, filter)).ConvertAll(StudentToREST);
+            List<RESTStudent> StudentList = (await StudentService.GetAllStudents(order, sort, pageSize, pageNum, atribute, filter)).ConvertAll(StudentToREST);
 
             string combinedString = "";
 
