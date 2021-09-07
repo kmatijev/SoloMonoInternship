@@ -54,7 +54,7 @@ namespace Project.Common
             atribute = newAtribute;
             filter = newFilter;
         }
-        public string Filter(string atribute, string filter)
+        public string Filter()
             {
                 if (atribute == "StudentName")
                     return String.Format(" WHERE {0} LIKE '%{1}%' ", atribute, filter);

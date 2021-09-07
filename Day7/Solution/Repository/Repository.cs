@@ -60,14 +60,14 @@ namespace WebRepository
 
             if (sort != "null" && order != "null")
             {
-                Sorter SortString = new Sorter();
-                toSort = SortString.SortBy(order, sort);
+                Sorter SortString = new Sorter(order, sort);
+                toSort = SortString.SortBy();
             }
             
             if (atribute != "null" && filter != "null")
             {
-                GradeFilter FilterString = new GradeFilter();
-                toFilter = FilterString.Filter(atribute, filter);
+                GradeFilter FilterString = new GradeFilter(atribute, filter);
+                toFilter = FilterString.Filter();
             }
 
             using (connection)
@@ -228,14 +228,14 @@ namespace WebRepository
 
             if (sort != "null" && order != "null")
             {
-                Sorter SortString = new Sorter();
-                toSort = SortString.SortBy(order, sort);
+                Sorter SortString = new Sorter(order, sort);
+                toSort = SortString.SortBy();
             }
 
             if (atribute != "null" && filter != "null")
             {
-                StudentFilter FilterString = new StudentFilter();
-                toFilter = FilterString.Filter(atribute, filter);
+                StudentFilter FilterString = new StudentFilter(atribute, filter);
+                toFilter = FilterString.Filter();
             }
 
             using (connection)
