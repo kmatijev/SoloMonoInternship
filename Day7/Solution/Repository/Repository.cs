@@ -44,36 +44,14 @@ namespace WebRepository
             return GradeList;
         }
 
-        public async Task<List<Grade>> GetAllGrades(string order, string sort, int pageSize, int pageNum, string atribute, string filter)
+        public async Task<List<Grade>> GetAllGrades()
         {
             List<Grade> GradeList = new List<Grade>();
-
-            string toPage = "";
-            string toSort = "";
-            string toFilter = "";
-
-            if (pageSize >= 0 && pageNum >= 0)
-            {
-                Pager PageString = new Pager(pageSize, pageNum);
-                toPage = PageString.AddPage();
-            }
-
-            if (sort != "null" && order != "null")
-            {
-                Sorter SortString = new Sorter(order, sort);
-                toSort = SortString.SortBy();
-            }
-            
-            if (atribute != "null" && filter != "null")
-            {
-                GradeFilter FilterString = new GradeFilter(atribute, filter);
-                toFilter = FilterString.Filter();
-            }
 
             using (connection)
             {
                 connection.Open();
-                string queryString = "SELECT GradeName, GradeID FROM Grade" + toFilter + toSort + toPage + ";";
+                string queryString = "SELECT GradeName, GradeID FROM Grade;";
                 SqlCommand command = new SqlCommand(queryString, connection);
 
                 SqlDataReader reader = await command.ExecuteReaderAsync();

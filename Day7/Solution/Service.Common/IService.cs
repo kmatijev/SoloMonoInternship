@@ -9,7 +9,7 @@ namespace Service.Common
     public interface IService
     {
         Task<List<Grade>> GetGrade(int id);
-        Task<List<Grade>> GetAllGrades(string order, string sort, int pageSize, int pageNum, string atribute, string filter);
+        Task<List<Grade>> GetAllGrades();
         Task<Grade> PostGrade(int id, string value);
         Task<string> PutGrade(int id, string value);
         Task<string> DeleteGrade(int id);

@@ -7,9 +7,11 @@ using System.Data.SqlClient;
 using Model.Grade;
 using System.Threading.Tasks;
 using Service.Common;
+using System.Web.Http.Cors;
 
 namespace WebAPI.Controllers
 {
+
     public class GradeController : ApiController
     {
         public IService GradeService { get; set; }
@@ -60,11 +62,11 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet]
-        [Route("api/grades/{order}/{sort}/{pageSize}/{pageNum}/{atribute}/{filter}")]
-        public async Task<HttpResponseMessage> GetAll(string order, string sort, int pageSize, int pageNum, string atribute, string filter)
+        [Route("api/grades")]
+        public async Task<HttpResponseMessage> GetAll()
         {
 
-            List<RESTGrade> GradeList = (await GradeService.GetAllGrades(order, sort, pageSize, pageNum, atribute, filter)).ConvertAll(GradeToREST);
+            List<RESTGrade> GradeList = (await GradeService.GetAllGrades()).ConvertAll(GradeToREST);
 
             string combinedString = "";
 

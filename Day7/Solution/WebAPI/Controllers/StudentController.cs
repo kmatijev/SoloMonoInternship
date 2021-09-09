@@ -7,9 +7,11 @@ using System.Data.SqlClient;
 using Model.Student;
 using System.Threading.Tasks;
 using Service.Common;
+using System.Web.Http.Cors;
 
 namespace WebAPI.Controllers
 {
+
     public class StudentController : ApiController
     {
         public IService StudentService { get; set; }
