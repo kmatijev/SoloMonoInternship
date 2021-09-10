@@ -41,22 +41,18 @@ namespace WebAPI.Controllers
         public async Task<HttpResponseMessage> Get(int id)
         {
 
-            List<RESTGrade> GradeList = (await GradeService.GetGrade(id)).ConvertAll(GradeToREST);
+            RESTGrade grade = GradeToREST(await GradeService.GetGrade(id));
 
-            string combinedString = "";
 
-            if (GradeList.Capacity == 0)
+            if (grade == null)
             {
                 HttpResponseMessage Msg = Request.CreateResponse(HttpStatusCode.BadRequest, "No grade for given id.");
                 return Msg;
             }
             else
-            {
-                foreach (RESTGrade x in GradeList)
-                {
-                    combinedString += String.Format("Grade ID: {0}, Grade Name: {1}", x.id, x.name);
-                }
-                HttpResponseMessage Msg = Request.CreateResponse(HttpStatusCode.OK, combinedString);
+            { 
+
+                HttpResponseMessage Msg = Request.CreateResponse(HttpStatusCode.OK, grade);
                 return Msg;
             }
         }
@@ -81,16 +77,16 @@ namespace WebAPI.Controllers
                 {
                     combinedString += String.Format("Grade ID: {0}, Grade Name: {1}    ", x.id, x.name);
                 }
-                HttpResponseMessage Msg = Request.CreateResponse(HttpStatusCode.OK, combinedString);
+                HttpResponseMessage Msg = Request.CreateResponse(HttpStatusCode.OK, GradeList);
                 return Msg;
             }
         }
         // POST api/student/{id}
         [HttpPost]
-        [Route("api/grade/{id}")]
-        public async Task<HttpResponseMessage> Post(int id, [FromBody] string value)
+        [Route("api/grade")]
+        public async Task<HttpResponseMessage> Post([FromBody] RESTGrade composite)
         {
-            RESTGrade returnGrade = GradeToREST(await GradeService.PostGrade(id, value));
+            RESTGrade returnGrade = GradeToREST(await GradeService.PostGrade(composite.id, composite.name));
 
             if (returnGrade.id == 0 && returnGrade.name == "")
             {
@@ -106,10 +102,11 @@ namespace WebAPI.Controllers
 
         // PUT api/student/5
         [HttpPut]
-        [Route("api/grade/{id}")]
-        public async Task<HttpResponseMessage> Put(int id, [FromBody] string value)
+        [Route("api/grade")]
+        public async Task<HttpResponseMessage> Put([FromBody] RESTGrade composite)
         {
-            string combinedString = await GradeService.PutGrade(id, value);
+
+            string combinedString = await GradeService.PutGrade(composite.id, composite.name);
 
             if (combinedString == "")
             {

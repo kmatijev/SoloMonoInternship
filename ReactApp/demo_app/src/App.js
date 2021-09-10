@@ -5,9 +5,10 @@ import { Input, FormGroup, Label, Table, Button, Modal, ModalBody, ModalFooter, 
 
 class App extends Component {
   state = {
-    students: [],
+   // students: [],
     grades : [],
     newGradeData: {
+      id: '',
       name: ''
     },
     editGradeData:
@@ -24,16 +25,16 @@ class App extends Component {
   }
 
   toggleNewGradeModal(){
-    this.setState({
-      newGradeModal: ! this.state.newGradeModal
-    })
+    this.setState((state) => ({
+      newGradeModal: !state.newGradeModal
+    }))
   }
 
   toggleEditGradeModal()
   {
-    this.setState({
-      editGradeModal : ! this.state.editGradeModal
-    })
+    this.setState((state) => ({
+      editGradeModal : !state.editGradeModal
+    }))
   }
   deleteGrade(id)
   {
@@ -43,7 +44,7 @@ class App extends Component {
   }
   addGrade()
   {
-    axios.post('https://localhost:44354/api/grade/' + this.state.newGradeData).then((response) => {
+    axios.post('https://localhost:44354/api/grade', this.state.newGradeData).then((response) => {
       let { grades } = this.state;
 
       grades.push(response.data);
@@ -51,20 +52,20 @@ class App extends Component {
       this.setState({grades, newGradeModal: false,     newGradeData: {
         name: ''
       }});
-    })
+
+      //this._refreshGrades();
+    }).then((response) => { this._refreshGrades();})
   }
   editGrade(id, name)
   {
-    this.setState({
-      editGradeData: { id, name }, editGradeModal: ! this.state.editGradeModal
-    });
+    //console.log(id, name);
+    this.setState((state) => ({
+      editGradeData: { id, name }, editGradeModal: !state.editGradeModal
+    }));
   }
   updateGrade()
   {
-    let { name } = this.state.editGradeData.name;
-    axios.put('https://localhost:44354/api/grade/' + this.state.editGradeData.id, {
-      name
-    }).then((response) => {
+    axios.put('https://localhost:44354/api/grade', this.state.editGradeData).then((response) => {
       this._refreshGrades();
       
       this.setState({
@@ -87,8 +88,8 @@ class App extends Component {
           <td>{grade.id}</td>
           <td>{grade.name}</td>
           <td>
-            <Button color="success" size="sm" className ="mr" onClick={ this.editGradeData.bind(this, grade.id, grade.name)}>Edit</Button>
-            <Button color="danger" size="sm" onClick={this.deleteGrade.bind(this, grade.id)}>Delete</Button>
+            <Button key = {"button1" + grade.id} color="success" size="sm" onClick={ this.editGrade.bind(this, grade.id, grade.name)}>Edit</Button>
+            <Button key = {"button2" + grade.id} color="danger" size="sm" onClick={this.deleteGrade.bind(this, grade.id)}>Delete</Button>
           </td>
       </tr>
       )
@@ -103,6 +104,13 @@ class App extends Component {
         <ModalBody>
 
           <FormGroup>
+            <Label for="id">ID</Label>
+            <Input id="id"  value={this.state.newGradeData.id} onChange={(e) => 
+            {
+              let { newGradeData } = this.state;
+              newGradeData.id = e.target.value;
+              this.setState({ newGradeData }); // updatea state razreda aka name
+            }}/>
             <Label for="name">Name</Label>
             <Input id="name"  value={this.state.newGradeData.name} onChange={(e) => 
             {
@@ -110,20 +118,21 @@ class App extends Component {
               newGradeData.name = e.target.value;
               this.setState({ newGradeData }); // updatea state razreda aka name
             }}/>
+            
           </FormGroup>  
 
 
         </ModalBody>
         <ModalFooter>
-          <Button color="primary" onClick={this.addGrade.bind(this)}>Add Grade</Button>{' '}
+          <Button color="primary" onClick={this.addGrade.bind(this)} >Add Grade</Button>
           <Button color="secondary" onClick={this.toggleNewGradeModal.bind(this)}>Cancel</Button>
         </ModalFooter>
       </Modal>
 
-      <Modal isOpen={this.state.editGradeModal} toggle={this.toggleEditGradeModal.bind(this)}>
-        <ModalHeader toggle={this.toggleEditGradeModal.bind(this)}>Edit a grade</ModalHeader>
+      <Modal isOpen={this.state.editGradeModal}>
+        <ModalHeader>Edit a grade</ModalHeader>
         <ModalBody>
-
+          
           <FormGroup>
             <Label for="name">Name</Label>
             <Input id="name"  value={this.state.editGradeData.name} onChange={(e) => 
@@ -132,13 +141,14 @@ class App extends Component {
               editGradeData.name = e.target.value;
               this.setState({ editGradeData }); // updatea state razreda aka name
             }}/>
-          </FormGroup>  
+          </FormGroup>
+          
 
 
         </ModalBody>
         <ModalFooter>
-          <Button color="primary" onClick={this.updateGrade.bind(this)}>Update Grade</Button>{' '}
-          <Button color="secondary" onClick={this.toggleEditGradeModal.bind(this)}>Cancel</Button>
+         <Button color="primary" onClick={this.updateGrade.bind(this)}>Update Grade</Button>{' '}
+         <Button color="secondary" onClick={this.toggleEditGradeModal.bind(this)}>Cancel</Button>
         </ModalFooter>
       </Modal>
         <Table>

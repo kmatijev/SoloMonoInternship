@@ -10,7 +10,7 @@ namespace WebAPI
     {
         public static void Register(HttpConfiguration config)
         {
-            var cors = new EnableCorsAttribute("http://localhost:3000/", "*", "*");
+            var cors = new EnableCorsAttribute("*", "*", "*");
             // Web API configuration and services
             config.EnableCors(cors);
             // Web API routes

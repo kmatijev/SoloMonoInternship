@@ -14,9 +14,9 @@ namespace WebRepository
     {
         SqlConnection connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;");
 
-        public async Task<List<Grade>> GetGrade(int id)
+        public async Task<Grade> GetGrade(int id)
         {
-            List<Grade> GradeList = new List<Grade>();
+            Grade GradeList = new Grade();
 
             using (connection)
             {
@@ -34,7 +34,6 @@ namespace WebRepository
                         S.name = Convert.ToString(reader.GetString(0));
                         S.id = id;
 
-                        GradeList.Add(S);
                     }
                     reader.NextResult();
                 }
